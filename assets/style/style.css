@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    ---scissor-color:#f8b10d;
+    ---rock-color:#5cbee5;
+    ---paper-color:#e8504c;
+    ---background-color:#ffffff;
+}
+
+
+/* Header */
+header {
+    display:flex;
+    justify-content:space-around;
+}
+
+.rockHeader, .paperHeader, .scissorHeader {
+    color:white;
+    width:100%;
+    padding:1rem;
+    align-items: center;
+}
+
+header p {
+    font-size:2.5rem;
+    justify-content:center;
+    margin-left:30%;
+}
+
+.rockHeader {
+    background-color:var(---rock-color);
+}
+
+.paperHeader {
+    background-color:var(---paper-color);
+}
+
+.scissorHeader {
+    background-color:var(---scissor-color);
+}
+
+/* Header end */
+
+/* Main */
+.roundsContainer,.iconContainer {
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+    align-items:center;
+    margin-top:2rem;
+}
+
+form {
+    margin-bottom:2rem;
+}
+
+.scoreContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+#scoreDisplay {
+    display: flex;
+}
+
+#scoreDisplay p {
+    font-size:2rem;
+}
+
+img {
+    height:10rem;
+    width:11rem;
+}
+
+.iconContainer {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+
+
+.result {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+
+
+/* Main end */
+
+#reset {
+    width: 100%;
+    background-color: var(---paper-color);
+    margin-top: 1.5rem;
+    padding:1rem;
+}
+/* footer end*/
